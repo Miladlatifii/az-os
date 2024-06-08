@@ -3,31 +3,21 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
     <title>Clock</title>
   </head>
   <body>
     <div>
-      <header
-        style="
-          background: #ebdfdf;
-          width: 100%;
-          display: flex;
-          justify-content: space-around;
-          margin-bottom: 15px;
-        "
-      >
+      <header class="header">
         <a style="padding: 10px" href="./index.html">HOME</a>
         <a style="padding: 10px" href="./fifopage.html">FIFO</a>
         <a style="padding: 10px" href="./lrupage.html">LRU</a>
         <a style="padding: 10px" href="./optimalpage.html">OPTIMAL</a>
-        <a style="padding: 10px" href="./clockpage.html">CLOCK</a>
       </header>
-      <div style="display: flex">
-        <img style="width: 40%" src="images/clock1.png" alt="" />
-        <img style="width: 40%" src="images/clock2.png" alt="" />
-        <div style="margin-left: 30px; margin-top: 50px; display: block">
-          Total Page Faults: 6
-        </div>
+      <div class="container">
+        <img src="images/clock1.png" alt="" />
+        <img src="images/clock2.png" alt="" />
+        <div>Total Page Faults: 6</div>
       </div>
     </div>
     <script src="./clockpage.js"></script>
