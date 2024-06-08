@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lru</title>
+  </head>
+  <body>
+    <div>
+      <header
+        style="
+          background: #ebdfdf;
+          width: 100%;
+          display: flex;
+          justify-content: space-around;
+          margin-bottom: 15px;
+        "
+      >
+        <a style="padding: 10px" href="./index.html">HOME</a>
+        <a style="padding: 10px" href="./fifopage.html">FIFO</a>
+        <a style="padding: 10px" href="./lrupage.html">LRU</a>
+        <a style="padding: 10px" href="./optimalpage.html">OPTIMAL</a>
+        <a style="padding: 10px" href="./clockpage.html">CLOCK</a>
+      </header>
+
+      <div style="display: flex; align-items: center; justify-content: center">
+        <img src="/images/lru.png" alt="" />
+        <div
+          style="
+            margin-left: 30px;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+          "
+        >
+          <span style="padding: 10px">1</span>
+          <span style="padding: 10px">Evicting key 2</span>
+          <span style="padding: 10px">Page fault for key 2</span>
+          <span style="padding: 10px">-1</span>
+          <span style="padding: 10px">Evicting key 1</span>
+          <span style="padding: 10px">Page fault for key 1</span>
+          <span style="padding: 10px">-1</span>
+          <span style="padding: 10px">3</span>
+          <span style="padding: 10px">4</span>
+          <span style="border-top: 3px solid #110f0fcc; width: 100%">
+            Total Page Faults: 2</span
+          >
+        </div>
+      </div>
+    </div>
+    <script src="./lrupage.js"></script>
+  </body>
+</html>
